@@ -40,11 +40,5 @@ public class Main {
         }
     }
 
-    private static void createAndShowWindow(List<Student> students) {
-        String[] columns = {
-                "Name", "CID", "Type", "Independent Programming Test",
-                "AI-Assisted Project", "Software Design Viva",
-                "Overall Module Mark"
-        };
     }
-}
+
