@@ -1,8 +1,6 @@
 import assessments.AssessmentFeed;
 import assessments.Student;
-
 import javax.swing.*;
-import javax.swing.table.DefaultTableCellRenderer;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -48,35 +46,5 @@ public class Main {
                 "AI-Assisted Project", "Software Design Viva",
                 "Overall Module Mark"
         };
-
-        Object[][] data = new Object[students.size()][columns.length];
-        for (int i = 0; i < students.size(); i++) {
-            Student student = students.get(i);
-            data[i][0] = student.getName();
-            data[i][1] = student.getCid();
-            data[i][2] = student.getType();
-            data[i][3] = formatPercentage(student.getAssessmentMark(
-                    AssessmentFeed.PROGRAMMING_TEST));
-            data[i][4] = formatPercentage(student.getAssessmentMark(
-                    AssessmentFeed.AI_PROJECT));
-            data[i][5] = student.getType().equals("MSc")
-                    ? formatPercentage(student.getAssessmentMark(
-                    AssessmentFeed.DESIGN_VIVA))
-                    : "N/A";
-            data[i][6] = formatPercentage(student.getOverallPercentage());
-        }
-
-        JTable table = new JTable(data, columns);
-
-        JFrame frame = new JFrame("Assessment Results");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.add(new JScrollPane(table));
-        frame.setSize(700, 500);
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
-    }
-
-    private static String formatPercentage(double mark) {
-        return String.format("%.2f%%", mark);
     }
 }

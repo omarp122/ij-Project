@@ -1,5 +1,4 @@
 package assessments;
-
 import java.util.Map;
 
 public class aiTest extends Assessment {
