@@ -2,11 +2,11 @@ package assessments;
 
 import java.util.Map;
 
-public class SoftwareDesignViva extends Assessment {
+public class softwareTest extends Assessment {
     private final double designMark;
     private final double explanationMark;
 
-    public SoftwareDesignViva(String cid) {
+    public softwareTest(String cid) {
         super(AssessmentFeed.DESIGN_VIVA);
         designMark = AssessmentFeed.getResult(
                 cid, AssessmentFeed.DESIGN_VIVA, AssessmentFeed.DESIGN_MARK);

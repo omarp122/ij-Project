@@ -4,6 +4,11 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+          </set>
+        </option>
         <option name="myGradleHome" value="C:\Users\Omapo\.gradle\wrapper\dists\gradle-8.14.7-bin\cl6dnvcdn41wooxelglkfwsxn\gradle-8.14.7" />
       </GradleProjectSettings>
     </option>

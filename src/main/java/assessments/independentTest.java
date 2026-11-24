@@ -2,18 +2,14 @@ package assessments;
 
 import java.util.Map;
 
-public class IndependentProgrammingTest extends Assessment {
+public class independentTest extends Assessment {
     private final double programMark;
     private final boolean explanationSuccessful;
 
-    public IndependentProgrammingTest(String cid) {
+    public independentTest(String cid) {
         super(AssessmentFeed.PROGRAMMING_TEST);
-        programMark = AssessmentFeed.getResult(
-                cid, AssessmentFeed.PROGRAMMING_TEST, AssessmentFeed.PROGRAM_MARK);
-
-        double explained = AssessmentFeed.getResult(
-                cid, AssessmentFeed.PROGRAMMING_TEST,
-                AssessmentFeed.EXPLAINED_SUCCESSFULLY);
+        programMark = AssessmentFeed.getResult(cid, AssessmentFeed.PROGRAMMING_TEST, AssessmentFeed.PROGRAM_MARK);
+        double explained = AssessmentFeed.getResult(cid, AssessmentFeed.PROGRAMMING_TEST, AssessmentFeed.EXPLAINED_SUCCESSFULLY);
         explanationSuccessful = explained == 1.0;
     }
 

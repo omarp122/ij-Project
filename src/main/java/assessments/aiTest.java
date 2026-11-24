@@ -2,11 +2,11 @@ package assessments;
 
 import java.util.Map;
 
-public class AiAssistedProject extends Assessment {
+public class aiTest extends Assessment {
     private final double functionalityMark;
     private final double verificationMark;
 
-    public AiAssistedProject(String cid) {
+    public aiTest(String cid) {
         super(AssessmentFeed.AI_PROJECT);
         functionalityMark = AssessmentFeed.getResult(
                 cid, AssessmentFeed.AI_PROJECT, AssessmentFeed.FUNCTIONALITY_MARK);
